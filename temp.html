@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
+    <link rel="stylesheet" href="stylesV1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigationBar">
+            <div class="leftColumn">
+                <div class="navigationLinkWrapper active-nav-link">
+                    <a href="homePage.html">Home</a>
+
+                </div>
+                <div class="navigationLinkWrapper">
+                    <a href="about.html">About Me</a>
+
+                </div>
+                <div class="navigationLinkWrapper">
+                    <a href="https://github.com/OptimumAF" target="_blank">Github</a>
+
+                </div>
+
+            </div>
+
+            <div class="rightColumn">
+                <div class="brandText">
+                    <div>AVERY FERNANDEZ</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio">
+            <div class="portfolioItems">
+                <div class="portfolioItem">
+                    <div class="portfolioBackgroundImage" style="background-image:url(content/python.jpg)"></div>
+                    <div class="imageTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="content/logos/pythonLogo.png">
+                        </div>
+
+                        <div class="subtitleText">
+                            Python programs varying from Data Anaylytics to Data Visualization
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolioItem">
+                    <div class="portfolioBackgroundImage" style="background-image:url(content/machineLearning.png)"></div>
+                    <div class="imageTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="content/logos/mlLogo.png">
+                        </div>
+
+                        <div class="subtitleText">
+                            Machine Learning programs for Object Detection and Location
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolioItem">
+                    <div class="portfolioBackgroundImage" style="background-image:url(content/unix.jpg)"></div>
+                    <div class="imageTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="content/logos/unixLogo.png">
+                        </div>
+
+                        <div class="subtitleText">
+                            Unix programs varying from Data Anaylytics to Data Visualization
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolioItem">
+                    <div class="portfolioBackgroundImage" style="background-image:url(content/app.png)"></div>
+                    <div class="imageTextWrapper">
+                        <div class="logoWrapper">
+                            <img src="content/logos/appLogo.png">
+                        </div>
+
+                        <div class="subtitleText">
+                            App Designs
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    const portfolioItemsHolder = document.querySelectorAll('.portfolioItem')
+
+    portfolioItemsHolder.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.childNodes[1].classList.add('img-darken')
+        })
+
+        item.addEventListener('mouseout', () => {
+            item.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
+</html>

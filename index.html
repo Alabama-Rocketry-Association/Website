@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alabama Rocketry Association</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
 
+            loader.classList.add("loader--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <div class="nav-links">
-                <ul>
-                    <li style="float:left"><a href="index.html">ALABAMA ROCKETRY ASSOCIATION</li>
-                    <li><a href="page.html">COURSES</a></li>
-                    <li><a href="">DOCUMENTATION</a></li>
-                    <li><a href="">ABOUT</a></li>
-                </ul>
+    <div class="loader"></div>
+    <div class="container">
+        <div class="navigationBar">
+            <div class="teamName">
+                <div class="brandText">
+                    <div class="navigationLinkWrapper active-nav-link">
+                        <a href="homePage.html">ALABAMA ROCKETRY ASSOCIATION</a>
+                    </div>
+                </div>
             </div>
-        </nav>
+            <div class="nav-links">
+                <div class="navigationLinkWrapper">
+                    <a href="page.html">COURSES</a>
 
-        <div class="title-text">
-            <h1>Alabama Rocketry Association</h1> 
-            <p>Continuity, Validation, Scope!</p>
+                </div>
+                <div class="navigationLinkWrapper">
+                    <a href="about.html">DOCUMENTATION</a>
+
+                </div>
+                <div class="navigationLinkWrapper">
+                    <a href="about.html">ABOUT</a>
+
+                </div>
+            </div>
         </div>
-    </section>
+
+        <div class="page-title">
+            <h1>The "print()" Statement in Python</h1>
+            
+        </div>
+    </div>
 </body>
+
 </html>
