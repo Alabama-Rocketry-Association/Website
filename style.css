@@ -4,13 +4,22 @@ body {
     font-family: 'Varela Round', sans-serif;
 
 }
-
-.container {
+.holder {
     display: grid;
     grid-template-columns: 1fr;
 }
-
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    opacity: 0;
+    visibility: hidden;
+}
+.container--show {
+    opacity: 100;
+    visibility: visible;
+}
 /* Navigation Styles */
+  
 .navigationBar {
     
     display: flex;
@@ -24,6 +33,7 @@ body {
     background-size: cover;
     position: relative;
 }
+
 
 .nav-links {
     margin-left: auto;
@@ -215,8 +225,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #333333;
-    transition: opacity 0.75s, visibility 0.75s;
+    background: #333333 !important;
+    transition: opacity 3.75s, visibility 2s;
   }
   
   .loader--hidden {
