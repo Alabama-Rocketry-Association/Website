@@ -75,25 +75,58 @@ body {
 .active-nav-link a {
     color: red !important;
 }
+/* Home Page Styles */
+.wideImage img{
+    display: grid;
+    width: 100%;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wideVideo video{
+    display: grid;
+    width: 100%;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 
-/* Portfolio Styles */
-/*.portfolioItems {
+}
+.motto {
+    display: grid;
+    text-align: center;
+    width: 100%;
+    font-size: 72px;
+    color: #9C1C34;
+    font-family: 'Alkalami', serif;
+}
+.rocketryIntro {
+    display: grid;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: #9C1C34;
+}
+.projects {
+    display: grid;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: #9C1C34;
+}
+.teams{
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
 
-.portfolioItem {
+}
+.team {
     position: relative;
 }
-
-.portfolioBackgroundImage {
-    height: 500px;
+.teamBackgroundImage img{
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .imageTextWrapper {
     position: absolute;
     top: 0;
@@ -106,51 +139,43 @@ body {
     padding-left: 100px;
     padding-right: 100px;
 }
-
-.logoWrapper img {
-    width: 50%;
-    margin-bottom: 20px;
-}
-
 .imageTextWrapper .subtitleText {
     font-weight: 600;
     transition: 1s;
     color: transparent;
 }
-
 .imageTextWrapper:hover .subtitleText {
     font-weight: 600;
     color: lightseagreen;
 
 }
-
-
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
 }
-*/
-/* About Me */
-/*
-.two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+.teamButton {
+    background-color: #555555;
+    border: groove;
+    border-block-color: ghostwhite;
+    border-width: 2px;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: max-content;
+    transition-duration: .4s;
+}
+.teamButton:hover {
+    background-color: #e7e7e7;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.teamButton a {
+    text-decoration: none;
+    transition: color 0.5s;
 }
 
-.profileImage img {
-    width: 100%;
-}
-
-.profileContent {
-    vertical-align: middle;
-    padding: 30px;
-}
-
-.profileContent h1{
-    color: lightseagreen;
-}
-*/
 /* Landing Page */
 .landingPage {
     display: grid;
@@ -226,7 +251,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #333333 !important;
-    transition: opacity 3.75s, visibility 2s;
+    transition: opacity 3.75s, visibility .75s;
   }
   
   .loader--hidden {
