@@ -283,4 +283,54 @@ body {
         transform: rotateZ(-360deg);
     }
   }
-  
+/* About Team */
+.aboutTeam {
+    display: grid;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: #9C1C34;
+}
+.aboutIntro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.textIntro {
+    position: relative;
+}
+.funnyPic {
+    position: relative;
+}
+.teamBackgroundImage img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.textIntro text{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.imageTextWrapper .subtitleText {
+    font-weight: 600;
+    transition: 1s;
+    color: transparent;
+}
+.imageTextWrapper:hover .subtitleText {
+    font-weight: 600;
+    color: lightseagreen;
+
+}
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
