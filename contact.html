@@ -28,6 +28,7 @@
             });
         });
     </script>
+    <?php>
 </head>
 <body>
     <div class="loader">
@@ -1105,6 +1106,40 @@
         </div>
 
         <div class="Page">
+            <div class="contactForm">
+                <h1>CONTACT FORM</h1>
+                <form id="contact-form" class="contact-form" method="post" action="action_page.php"/>
+                    <div>
+                        <div>
+                            <label for="name">FULL NAME</label>
+                        </div>
+                        <div>
+                            <input type="text" id="Name" name="Name" placeholder="Full Name" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                        </div>
+                        <div>
+                            <input type="email" id="Email" name="Email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="message">MESSAGE</label>    
+                        </div>
+                        <div>
+                            <textarea name="Message" id="Message" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit">SEND</button>
+                    </div>
+
+                </form>
+            </div>
+
         </div>
     </div>
 </body>
