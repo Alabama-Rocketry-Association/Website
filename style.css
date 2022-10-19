@@ -174,15 +174,10 @@ body {
 .instaFeed {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
     width: 100%;
-    font-size: 24px;
-    color: #9C1C34;
 }
 .instaPost {
     position: relative;
-    width: 100%;
-
 }
 .projects {
     display: grid;
