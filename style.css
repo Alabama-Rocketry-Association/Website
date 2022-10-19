@@ -179,6 +179,17 @@ body {
 .instaPost {
     position: relative;
 }
+.sponsorPage img{
+    width: 100%;
+}
+.sponsoring {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.sponsorBenefits {
+    position: relative;
+}
 .projects {
     display: grid;
     text-align: center;
