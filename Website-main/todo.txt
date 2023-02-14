@@ -1,0 +1,11 @@
+[ ]update svg
+
+
+adjust image for the the SVG of logo
+
+left align the text for the about page
+
+adjust loading logo with new one 
+
+fix scaling of the webpage
+
